@@ -6,11 +6,11 @@
 /*   By: zraunio <zraunio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 14:09:40 by zraunio           #+#    #+#             */
-/*   Updated: 2020/06/29 13:03:35 by zraunio          ###   ########.fr       */
+/*   Updated: 2021/02/25 14:20:16 by zraunio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 size_t	ft_abs(long int value)
 {

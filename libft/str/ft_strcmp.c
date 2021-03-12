@@ -6,11 +6,11 @@
 /*   By: zraunio <zraunio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/08 12:22:36 by zraunio           #+#    #+#             */
-/*   Updated: 2020/07/16 13:45:21 by zraunio          ###   ########.fr       */
+/*   Updated: 2021/01/11 10:25:09 by zraunio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int		ft_strcmp(const char *s1, const char *s2)
 {

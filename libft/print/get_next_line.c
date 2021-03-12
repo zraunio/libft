@@ -6,17 +6,24 @@
 /*   By: zraunio <zraunio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/23 10:27:34 by zraunio           #+#    #+#             */
-/*   Updated: 2021/01/07 12:55:19 by zraunio          ###   ########.fr       */
+/*   Updated: 2021/02/28 09:56:19 by zraunio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **This function finds the line, places it in *line, then duplicates the
 **rest into a temp pointer. it frees the original pointer, then points it to
 **temp, a.k.a. the rest of the fd not yet read. if EOF is reached, we del s[fd]
 */
+
+static int	clean_gnl(char *tmp, char **s, int fd)
+{
+	ft_memdel((void*)&tmp);
+	ft_memdel((void*)&s[fd]);
+	return (0);
+}
 
 static int	ft_find_line(char **s, int fd, int i, char **line)
 {
@@ -68,11 +75,7 @@ int			get_next_line(const int fd, char **line)
 	if (i < 0)
 		return (-1);
 	if ((i == 0 && s[fd] == NULL) || s[fd] == NULL)
-	{
-		ft_memdel((void*)&tmp);
-		ft_memdel((void*)&s[fd]);
-		return (0);
-	}
+		return (clean_gnl(tmp, s, fd));
 	else
 		return (ft_find_line(s, fd, i, line));
 }

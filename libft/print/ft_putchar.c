@@ -6,11 +6,11 @@
 /*   By: zraunio <zraunio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 14:06:33 by zraunio           #+#    #+#             */
-/*   Updated: 2020/06/29 13:18:44 by zraunio          ###   ########.fr       */
+/*   Updated: 2021/01/11 10:25:09 by zraunio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 void	ft_putchar(char c)
 {

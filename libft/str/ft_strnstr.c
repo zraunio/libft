@@ -6,11 +6,11 @@
 /*   By: zraunio <zraunio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 14:08:12 by zraunio           #+#    #+#             */
-/*   Updated: 2020/07/09 14:28:07 by zraunio          ###   ########.fr       */
+/*   Updated: 2021/01/11 10:25:09 by zraunio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_strnstr(const char *stack, const char *ndle, size_t i)
 {

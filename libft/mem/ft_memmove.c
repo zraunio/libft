@@ -6,11 +6,11 @@
 /*   By: zraunio <zraunio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 14:08:47 by zraunio           #+#    #+#             */
-/*   Updated: 2020/07/09 16:48:30 by zraunio          ###   ########.fr       */
+/*   Updated: 2021/01/11 10:25:09 by zraunio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

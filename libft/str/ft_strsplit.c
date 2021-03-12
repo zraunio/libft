@@ -6,24 +6,11 @@
 /*   By: zraunio <zraunio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 14:07:07 by zraunio           #+#    #+#             */
-/*   Updated: 2020/07/09 21:21:09 by zraunio          ###   ########.fr       */
+/*   Updated: 2021/02/24 13:37:37 by zraunio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-static void		ft_free_words(char **words)
-{
-	size_t	i;
-
-	i = 0;
-	while (words)
-	{
-		free(words[i]);
-		i++;
-	}
-	free(words);
-}
+#include "../libft.h"
 
 static size_t	ft_countwords(char const *s, char c)
 {
@@ -67,7 +54,7 @@ static char		**split_string(char const *s, char c, size_t count)
 
 	i = 0;
 	j = 0;
-	if (!(words = (char **)malloc(sizeof(char*) * (count + 2))))
+	if (!(words = (char **)malloc(sizeof(char*) * (count + 1))))
 		return (NULL);
 	while (s[i] && j < count)
 	{
@@ -94,6 +81,6 @@ char			**ft_strsplit(char const *s, char c)
 		return (NULL);
 	count = ft_countwords(s, c);
 	if (!(words = split_string(s, c, count)))
-		ft_free_words(words);
+		ft_arr_free(words);
 	return (words);
 }

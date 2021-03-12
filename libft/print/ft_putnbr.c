@@ -6,11 +6,11 @@
 /*   By: zraunio <zraunio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 14:04:17 by zraunio           #+#    #+#             */
-/*   Updated: 2020/06/26 14:04:18 by zraunio          ###   ########.fr       */
+/*   Updated: 2021/02/01 14:24:23 by zraunio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 void	ft_putnbr(int nb)
 {
@@ -20,7 +20,10 @@ void	ft_putnbr(int nb)
 	if (i < 0)
 	{
 		ft_putchar('-');
-		i = i * -1;
+		if (nb == -2147483648)
+			i = 2147483647;
+		else
+			i = i * -1;
 	}
 	if (i > 9)
 	{

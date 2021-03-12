@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_wdcounter.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zraunio <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: zraunio <zraunio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:38:24 by zraunio           #+#    #+#             */
-/*   Updated: 2020/11/03 16:38:25 by zraunio          ###   ########.fr       */
+/*   Updated: 2021/03/04 19:10:43 by zraunio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int		ft_wdcounter(char const *str, char c)
+size_t		ft_wdcounter(char const *str, char c)
 {
-	int i;
-	int words;
+	int		i;
+	size_t	words;
 
-	words = 0;
+	words = 1;
 	i = 0;
 	while (str[i])
 	{
